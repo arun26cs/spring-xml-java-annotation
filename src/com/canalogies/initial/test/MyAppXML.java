@@ -12,6 +12,8 @@ public class MyAppXML {
 		System.out.println(coach.getAdvise());
 		coach=context.getBean("myCoach1",Coach.class);
 		System.out.println(coach.getAdvise());
+		coach=context.getBean("myCricketCoach",Coach.class);
+		System.out.println(coach.getAdvise());
 		context.close();
 		
 	}

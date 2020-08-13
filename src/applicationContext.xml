@@ -21,8 +21,13 @@
  	</bean>
  	
  	<bean id="myCoach1" 
- 		class="com.canalogies.initial.test.CricketCoach">
+ 		class="com.canalogies.initial.test.TrackCoach">
  		<constructor-arg ref="myFortuneService"></constructor-arg> 		
+ 	</bean>
+ 	
+ 	<bean id="myCricketCoach" 
+ 		class="com.canalogies.initial.test.CricketCoach">
+ 		<property name="fortuneService" ref="myFortuneService"></property>	
  	</bean>
 
     <!--

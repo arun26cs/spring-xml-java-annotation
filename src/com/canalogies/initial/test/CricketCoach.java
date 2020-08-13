@@ -7,8 +7,13 @@ public class CricketCoach implements Coach{
 	
 	//without constructor the xml wont fit the data
 	
-	public CricketCoach(FortuneService fortuneService) {
+	public CricketCoach() {
+		System.out.println("no arg constr crick coach");
+	}
+	
+	public void setFortuneService(FortuneService fortuneService) {
 		this.fortuneService=fortuneService;
+		System.out.println("setter method cricket coach");
 	}
 	
 	@Override

@@ -21,5 +21,15 @@ public class BasketBallCaoch implements Coach{
 		// TODO Auto-generated method stub
 		return fortuneService.getFortune();
 	}
+	
+	//add an init method
+	public void startup() {
+		System.out.println("Basketball do statup");
+	}
+	
+	//add a delete method
+		public void kill() {
+			System.out.println("Basketball do kill");
+		}
 
 }

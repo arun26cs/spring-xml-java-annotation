@@ -4,9 +4,27 @@ public class CricketCoach implements Coach{
 
 	
 	private FortuneService fortuneService;
+	private String emailAddress;
+	private String team;
 	
 	//without constructor the xml wont fit the data
 	
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+
+	public void setEmailAddress(String emailAddress) {
+		this.emailAddress = emailAddress;
+	}
+
+	public String getTeam() {
+		return team;
+	}
+
+	public void setTeam(String team) {
+		this.team = team;
+	}
+
 	public CricketCoach() {
 		System.out.println("no arg constr crick coach");
 	}

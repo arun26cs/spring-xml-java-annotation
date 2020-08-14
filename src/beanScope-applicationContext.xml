@@ -20,26 +20,7 @@
  		<constructor-arg ref="myFortuneService"></constructor-arg> 		
  	</bean>
  	
- 	<bean id="myCoach1" 
- 		class="com.canalogies.initial.test.TrackCoach">
- 		<constructor-arg ref="myFortuneService"></constructor-arg> 		
- 	</bean>
- 	
- 	<bean id="myCricketCoach" 
- 		class="com.canalogies.initial.test.CricketCoach">
- 	  <property name="fortuneService" ref="myFortuneService"></property>	
- 	<!--	<property name="emailAddress" value="arun26cs@gmail.com"></property>
- 		<property name="team" value="csk"></property>-->	
- 		
- 		<property name="emailAddress" value="${foo.email}"></property>
- 		<property name="team" value="${foo.team}"></property>
- 	</bean>
-
-    <!--
-    <bean id="myCoach"
-        class="com.luv2code.springdemo.BaseballCoach">         
-    </bean>
-    -->
+ 	 
 
 </beans>
 
